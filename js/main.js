@@ -87,7 +87,7 @@ if ( $('.simply-countdown-column').is_exist() ) {
   simplyCountdown('.simply-countdown-column', {
       year: 2023,
       month: 6,
-      day: 10,
+      day: 18,
       enableUtc: false
   });
 }
