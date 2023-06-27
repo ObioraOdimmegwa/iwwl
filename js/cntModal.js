@@ -2,16 +2,15 @@
 let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-let btn = document.getElementById("myBtn");
+let _btn = document.getElementById("myBtn");
 let btn2 = document.getElementById("myBtn2");
 
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function () {
+_btn.onclick = function () {
   modal.style.display = "block";
-  
 };
 
 btn2.addEventListener("click", btnClick);
@@ -28,8 +27,6 @@ window.onclick = function (event) {
   }
 };
 
-function btnClick(){
-
+function btnClick() {
   modal.style.display = "block";
-
 }
