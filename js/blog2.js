@@ -20,15 +20,23 @@ function renderPost(doc){
 
     let blogDate = String(new Date(Number(doc.data().timeStamp))).slice(0, -36);
 
-    let blogBlock = `<div class="col-lg-4 col-md-4 col-sm-6" onclick="postClick('${doc.data().image}', '${doc.data().title}', '${blogDate}', '${doc.data().para1}', '${doc.data().para2}', '${doc.data().para3}', '${doc.data().para4}', '${doc.data().para5}' , '${doc.data().description}')" style="cursor: pointer;">
+    let blogBlock = `<div class="col-lg-4 col-md-4 col-sm-6" onclick="postClick('${
+      doc.data().image
+    }', '${doc.data().title}', '${blogDate}', '${doc.data().para1}', '${
+      doc.data().para2
+    }', '${doc.data().para3}', '${doc.data().para4}', '${
+      doc.data().para5
+    }' , '${doc.data().description}')" style="cursor: pointer;">
 						<div class="fh5co-blog animate-bx">
-							<img class="img-responsive" src="${doc.data().image}" alt="" style="border-radius: 10px">
-							<div class="blog-text">
+							<img class="img-responsive" src="${
+                doc.data().image
+              }" alt="" style="border-radius: 10px">
+							<div class="blog-text" style="background-color: orange">
 								<div class="prod-title">
-									<h3>${doc.data().title}</h3>
-									<span class="posted_by">${blogDate}</span>
+									<h3 style="color: #fff">${doc.data().title}</h3>
+									<span style="color: #fff" class="posted_by">${blogDate}</span>
 									
-									<p>${doc.data().description}</p>
+									<p style="color: #fff">${doc.data().description}</p>
 									<p style="color: #bf0000; cursor: pointer;">Learn More...</p>
 								</div>
 							</div> 
